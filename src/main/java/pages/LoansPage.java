@@ -215,9 +215,10 @@ public class LoansPage extends BasePage {
       if(!Employer.toLowerCase().equals("false")) {
     	  
     	  input("companyName_XPATH", "Gojoko");
-          click("getMypersonalisedQuote_XPATH");
+         
       }
       
+      click("getMypersonalisedQuote_XPATH");
       
 
       try {
