@@ -1,0 +1,5 @@
+INFO    2024-05-27 16:26:03,922 [main] testcases.ContactTest  - Test Execution started !!!
+INFO    2024-05-27 16:26:16,301 [main] testcases.HomeTest  - Launching Chrome browser
+INFO    2024-05-27 16:26:18,481 [main] testcases.HomeTest  - Navigated to : https://uat.amplificapital.com/
+INFO    2024-05-27 16:26:21,426 [main] testcases.ContactTest  - Launching Chrome browser
+INFO    2024-05-27 16:26:23,854 [main] testcases.ContactTest  - Navigated to : https://uat.amplificapital.com/
