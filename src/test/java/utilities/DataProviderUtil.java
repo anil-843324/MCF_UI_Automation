@@ -7,7 +7,7 @@ public class DataProviderUtil {
 
     @DataProvider(name = "validData")
     public static Object[][] getValidData() {
-        ReusableFunction.openExcelFile(Constants.SUITE1_XL_PATH);
+        // ReusableFunction.openExcelFile(Constants.SUITE1_XL_PATH);
         return getDataFromExcel(Constants.SUITE1_XL_PATH, "Sheet1");
     }
 
