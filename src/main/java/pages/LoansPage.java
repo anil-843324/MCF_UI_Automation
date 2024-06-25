@@ -31,7 +31,7 @@ public class LoansPage extends BasePage {
    }
 
    public String validaDataWithOrganicJorney(String Month, String Day, String Year, String fName, String LName,
-         String title, String email, String postCode, String fullAddress, String loanTerm, String loanAmount)
+         String title, String email, String postCode, String FullAddress, String loanTerm, String loanAmount)
          throws MalformedURLException {
       click("loans_XPATH");
       click("getMypersonalisedQuote_XPATH");
@@ -61,17 +61,12 @@ public class LoansPage extends BasePage {
       click("useLoanFor_XPATH");
       input("pleaseSpecify_XPATH", "Education");
       
-      page.waitForSelector("select[formcontrolname='addressFormat']");
-      // page.evaluate(
-      //       "value => { let select = document.querySelector('select[formcontrolname=\"addressFormat\"]');select.value = value;select.dispatchEvent(new Event('change'));}",
-      //       fullAddress);
-         
-            page.evaluate(
-               "value => { let select = document.querySelectorAll('select[formcontrolname=\"addressFormat\"]')[0];select.value = value;select.dispatchEvent(new Event('change'));}",
-               fullAddress);
-            
-         
-      click("whenDidYouMoveIn_XPATH");
+      page.evaluate(
+            "value => { let select = document.querySelectorAll('select[formcontrolname=\"addressFormat\"]')[0];select.value = value;select.dispatchEvent(new Event('change'));}",
+            FullAddress);
+
+
+      click("whenDidYouMoveInMoreThanThree_XPATH");
       input("income_XPATH", "90000");
       click("dependentOnYou_XPATH");
       select("livingSituation_XPATH", "Homeowner with a mortgage");

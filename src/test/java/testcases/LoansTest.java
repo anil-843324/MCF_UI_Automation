@@ -60,7 +60,7 @@ public class LoansTest extends BaseTest {
   String loanTerm = data.get("loanterm");
   String loanAmount = data.get("loanval");
   
-//   System.out.println(fullAddress);
+  System.out.println(fullAddress);
 
   loanTerm = Integer.toString((int) Double.parseDouble(loanTerm));
   loanAmount = Integer.toString((int) Double.parseDouble(loanAmount));
@@ -79,7 +79,7 @@ public class LoansTest extends BaseTest {
   
   }
 
-    // // Error validation
+    // Error validation
     // @Test(dataProvider = "invalidData", dataProviderClass = DataProviderUtil.class)
     // public void formValidation2(Hashtable<String, String> data) throws MalformedURLException {
 
