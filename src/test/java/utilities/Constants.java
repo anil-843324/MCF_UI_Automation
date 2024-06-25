@@ -21,7 +21,7 @@ public class Constants {
 	// public static String INVALID_SUITE_XL_PATH = System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\InvalidTestData.xlsx";
 	public static String INVALID_SUITE_XL_PATH = System.getProperty("user.dir") + "/src/test/resources/testdata/InvalidTestData.xlsx";
 
-	public static String SUITE1_XL_PATH=System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\DRSTestDataTesting.xlsx";
+	public static String SUITE1_XL_PATH=System.getProperty("user.dir") + "/src/test/resources/testdata/DRSTestDataTesting.xlsx";
 	public static String User_XL_PATH=System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\userdetails.xlsx";
 	
 
