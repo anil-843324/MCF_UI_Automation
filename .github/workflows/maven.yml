@@ -32,11 +32,7 @@ jobs:
     - name: Run tests
       run: mvn test
     - name: Step 3 - Use the Upload Artifact GitHub Action
-
-    - name: Upload Extent Reports
       uses: actions/upload-artifact@v2
       with:
            name: reports
-           path: |
-             target/
-             path: test-output/extent-report.html
+           path: target/
