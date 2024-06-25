@@ -38,8 +38,7 @@ public class LoansPage extends BasePage {
       click("editButton_XPATH");
       select("selectLoanMonths_XPATH", loanTerm);
       input("borrowLoanAmount_XPATH", loanAmount);
-      click("useLoanFor_XPATH");
-      input("pleaseSpecify_XPATH", "Education");
+
       if (title.equals("MR")) {
          click("mrTitle_XPATH");
       } else if (title.equals("MRS")) {
@@ -59,10 +58,19 @@ public class LoansPage extends BasePage {
       input("mobileNumber_XPATH", "7770065929");
       input("postCode_XPATH", postCode);
       click("findMyAddress_XPATH");
+      click("useLoanFor_XPATH");
+      input("pleaseSpecify_XPATH", "Education");
+      
       page.waitForSelector("select[formcontrolname='addressFormat']");
-      page.evaluate(
-            "value => { let select = document.querySelector('select[formcontrolname=\"addressFormat\"]');select.value = value;select.dispatchEvent(new Event('change'));}",
-            fullAddress);
+      // page.evaluate(
+      //       "value => { let select = document.querySelector('select[formcontrolname=\"addressFormat\"]');select.value = value;select.dispatchEvent(new Event('change'));}",
+      //       fullAddress);
+         
+            page.evaluate(
+               "value => { let select = document.querySelectorAll('select[formcontrolname=\"addressFormat\"]')[0];select.value = value;select.dispatchEvent(new Event('change'));}",
+               fullAddress);
+            
+         
       click("whenDidYouMoveIn_XPATH");
       input("income_XPATH", "90000");
       click("dependentOnYou_XPATH");

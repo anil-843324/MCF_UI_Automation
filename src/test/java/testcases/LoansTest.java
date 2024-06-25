@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-//import com.aventstack.extentreports.util.Assert;
+// import com.aventstack.extentreports.util.Assert;
 
 import base.BaseTest;
 import pages.LoansPage;
@@ -24,7 +24,7 @@ public class LoansTest extends BaseTest {
 
     @BeforeMethod
     public void setUp() {
-        browser = getBrowser("headless");
+        browser = getBrowser("chrome");
         // browser = getBrowser("headless");
         navigate(browser, Constants.URL);
         loans = new LoansPage(page);
@@ -76,7 +76,7 @@ public class LoansTest extends BaseTest {
   ReusableFunction.generateRandomEmail(), postCode, fullAddress, loanTerm, loanAmount);
 
   Assert.assertEquals(loanStatus, "loan-offer");
- 
+  
   }
 
     // // Error validation
