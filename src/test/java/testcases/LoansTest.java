@@ -24,8 +24,8 @@ public class LoansTest extends BaseTest {
 
     @BeforeMethod
     public void setUp() {
-        browser = getBrowser("chrome");
-        // browser = getBrowser("headless");
+        // browser = getBrowser("chrome");
+        browser = getBrowser("headless");
         navigate(browser, Constants.URL);
         loans = new LoansPage(page);
     }
