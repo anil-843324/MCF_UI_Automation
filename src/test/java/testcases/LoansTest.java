@@ -80,37 +80,37 @@ public class LoansTest extends BaseTest {
   }
 
     // Error validation
-    // @Test(dataProvider = "invalidData", dataProviderClass = DataProviderUtil.class)
-    // public void formValidation2(Hashtable<String, String> data) throws MalformedURLException {
+    @Test(dataProvider = "invalidData", dataProviderClass = DataProviderUtil.class)
+    public void formValidation2(Hashtable<String, String> data) throws MalformedURLException {
 
     	
-    // 	System.out.println(
+    	System.out.println(
     			
-    //             data.get("LoanPurposeOther") + " " + data.get("Title") + ", " +
-    //             data.get("Forename") + ", " + data.get("Surname") + ", " +
-    //             String.valueOf((int) Float.parseFloat(data.get("Day(DOB)"))) + "/" + 
-    //             String.valueOf((int) Float.parseFloat(data.get("Month(DOB)"))) + "/" + 
-    //             String.valueOf((int) Float.parseFloat(data.get("Year(DOB)"))) + ", " +
-    //             data.get("Email") + ", " + data.get("Phone_Number") + ", " +
-    //             data.get("Postcode") + ", " + data.get("FullAddress") + ", " +
-    //             data.get("MoveIn") + ", " + data.get("PrevPostcode") + ", " +
-    //             data.get("PrevFullAddress") + ", " + data.get("CurrentIncome") + ", " +
-    //             data.get("Dependent") + ", " + data.get("Residential Status") + ", " +
-    //             data.get("RentOrMortgage") + ", " + data.get("EmploymentStatus") + ", " +
-    //             data.get("Employment_Sector") + ", " + data.get("Employer")
-    //         );
+                data.get("LoanPurposeOther") + " " + data.get("Title") + ", " +
+                data.get("Forename") + ", " + data.get("Surname") + ", " +
+                String.valueOf((int) Float.parseFloat(data.get("Day(DOB)"))) + "/" + 
+                String.valueOf((int) Float.parseFloat(data.get("Month(DOB)"))) + "/" + 
+                String.valueOf((int) Float.parseFloat(data.get("Year(DOB)"))) + ", " +
+                data.get("Email") + ", " + data.get("Phone_Number") + ", " +
+                data.get("Postcode") + ", " + data.get("FullAddress") + ", " +
+                data.get("MoveIn") + ", " + data.get("PrevPostcode") + ", " +
+                data.get("PrevFullAddress") + ", " + data.get("CurrentIncome") + ", " +
+                data.get("Dependent") + ", " + data.get("Residential Status") + ", " +
+                data.get("RentOrMortgage") + ", " + data.get("EmploymentStatus") + ", " +
+                data.get("Employment_Sector") + ", " + data.get("Employer")
+            );
 
-    //     String validationMessage = loans.formfilling(data.get("LoanPurposeOther"), data.get("Title"),
-    //             data.get("Forename"), data.get("Surname"), String.valueOf((int) Float.parseFloat(data.get("Day(DOB)"))) , String.valueOf((int) Float.parseFloat(data.get("Month(DOB)"))),
-    //             String.valueOf((int) Float.parseFloat(data.get("Year(DOB)"))) , data.get("Email"), data.get("Phone_Number"), data.get("Postcode"),
-    //             data.get("FullAddress"), data.get("MoveIn"), data.get("PrevPostcode"), data.get("PrevFullAddress"),
-    //             data.get("CurrentIncome"), data.get("Dependent"), data.get("Residential Status"),
-    //             data.get("RentOrMortgage"), data.get("EmploymentStatus"), data.get("Employment_Sector"),
-    //             data.get("Employer"));
+        String validationMessage = loans.formfilling(data.get("LoanPurposeOther"), data.get("Title"),
+                data.get("Forename"), data.get("Surname"), String.valueOf((int) Float.parseFloat(data.get("Day(DOB)"))) , String.valueOf((int) Float.parseFloat(data.get("Month(DOB)"))),
+                String.valueOf((int) Float.parseFloat(data.get("Year(DOB)"))) , data.get("Email"), data.get("Phone_Number"), data.get("Postcode"),
+                data.get("FullAddress"), data.get("MoveIn"), data.get("PrevPostcode"), data.get("PrevFullAddress"),
+                data.get("CurrentIncome"), data.get("Dependent"), data.get("Residential Status"),
+                data.get("RentOrMortgage"), data.get("EmploymentStatus"), data.get("Employment_Sector"),
+                data.get("Employer"));
         
-    //     System.out.println(validationMessage);
+        System.out.println(validationMessage);
 
-    // }
+    }
 
 
  
