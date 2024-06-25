@@ -34,5 +34,5 @@ jobs:
     - name: Step 3 - Use the Upload Artifact GitHub Action
       uses: actions/upload-artifact@v2
       with:
-           name: testReports
-           path: teport/
+           name: reports
+           path: target/
