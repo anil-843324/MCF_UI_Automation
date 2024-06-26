@@ -96,5 +96,13 @@ public static void printData(Hashtable<String, String> data) {
                 data.get("Employment_Sector") + ", " + data.get("Employer")
         );
     }
+
+    public static String convertAndRemoveSpaces(String sentence) {
+        // Convert the sentence to lowercase
+        String lowerCaseSentence = sentence.toLowerCase();
+        // Remove all spaces
+        String result = lowerCaseSentence.replaceAll("\\s", "");
+        return result;
+    }
     
 }
