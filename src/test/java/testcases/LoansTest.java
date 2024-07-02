@@ -115,6 +115,16 @@ public class LoansTest extends BaseTest {
     }
 
 
+    // public void validateFailedEasyPaymentJourney(){
+
+    // }
+
+    // @Test
+    // public void validateSuccessEasyPaymentJourney(){
+      
+    // }
+
+
  
 
 }

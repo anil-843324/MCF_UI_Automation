@@ -234,4 +234,11 @@ public class LoansPage extends BasePage {
             .textContent();
       return errorMessage;
    }
+
+
+   public void validateSuccessEasyPaymentJourney(){
+         
+      
+
+   }
 }

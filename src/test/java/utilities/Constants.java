@@ -17,6 +17,11 @@ public class Constants {
 	
 	public static String RUNMODE_YES = "Y";
 	public static String RUNMODE_NO = "N";
+
+	public static String USER_EMAIL = "akhandpath89@yopmail.com";
+	public static String USER_PASSWORD = "Test@1234";
+
+	
 	
 	// public static String INVALID_SUITE_XL_PATH = System.getProperty("user.dir") + "\\src\\test\\resources\\testdata\\InvalidTestData.xlsx";
 	public static String INVALID_SUITE_XL_PATH = System.getProperty("user.dir") + "/src/test/resources/testdata/InvalidTestData.xlsx";
