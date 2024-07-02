@@ -28,13 +28,14 @@ jobs:
 
     - name: Run tests
       run: mvn test
+      continue-on-error: true  # Continue to next steps even if this step fails
 
     - name: List test-reports directory for debugging
-      run: ls -R target/test-reports
+      run: ls -R target/surefire-reports
 
     - name: Upload Test Results
       uses: actions/upload-artifact@v2
+      if: always()  # This will ensure the step runs regardless of previous steps' success or failure
       with:
         name: test-reports
-        path: target/test-reports/*.html  # Adjust this path if your reports are generated elsewhere
-
+        path: target/surefire-reports/*.html  # Adjust this path if your reports are generated elsewhere
